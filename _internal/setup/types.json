@@ -1,0 +1,120 @@
+{
+    "Select": {
+        "Nuovo Adempimento": {
+            "Tipo Pubblico Ufficiale": {
+                "Notaio": [2, "up"],
+                "Altro Pubblico Ufficiale": [1, "up"],
+                "Autorità emittente": "",
+                "Altro Soggetto": [1, "down"]
+            },
+            "Tipo Bollo": {
+                "Atto non esente da imposta di bollo": [1, "down"],
+                "Atto esente da imposta di bollo": [2, "down"]
+            }
+        },
+        "Riepilogo Terreni": {},
+        "Riepilogo Fabbricati": {},
+        "Terreno": {
+            "Fondo D/S": {
+                "Dominante": [1, "down"],
+                "Servente": [2, "down"]
+            }
+        },
+        "Fabbricato": {
+            "Fondo D/S": {
+                "Dominante": [1, "down"],
+                "Servente": [2, "down"]
+                }
+        }
+    },
+    "Select Input": {
+        "Nuovo Adempimento": {
+            "Provincia": "",
+            "Comune": ""
+        },
+        "Riepilogo Terreni": {},
+        "Riepilogo Fabbricati": {},
+        "Terreno": {
+            "Provincia": "",
+            "Comune Amministrativo": "",
+            "Provincia Catastale": "",
+            "Comune Catastale": "",
+            "Sezione Censuaria": "",
+            "Natura": ""
+        },
+        "Fabbricato": {
+            "Provincia": "",
+            "Comune Amministrativo": "",
+            "Provincia Catastale": "",
+            "Comune Catastale": "",
+            "Categoria": ""
+        }
+    },
+    "Buttons": {
+        "Init": {
+            "File": "Init",
+            "Nuovo": "Init",
+            "Adempimento": "Nuovo Adempimento"
+        },
+        "Nuovo Adempimento": {
+            "Salva": "Riepilogo",
+            "Chiudi": "Init"
+        },
+        "Riepilogo": {
+            "Dati Titolo": "Nuovo Adempimento",
+            "Titolo Digitale": "Titolo Digitale",
+            "Testo Atto": "Testo Atto",
+            "Chiudi Adempimento": "Init",
+            "Esci": "",
+            "Soggetti Principali Fisici": "",
+            "Soggetti Principali Non Fisici": "",
+            "Soggetti da Inserire Coniugi": "",
+            "Soggetti da Inserire Fisici": "",
+            "Soggetti da Inserire Non Fisici": "",
+            "Immobili Terreni": "Riepilogo Terreni",
+            "Immobili Fabbricati": "Riepilogo Fabbricati",
+            "Note Trascrizione": "",
+            "Note Iscrizione": "",
+            "Note Annotazione": ""
+
+        },
+        "Riepilogo Terreni": {
+            "Inserisci Terreno": "Terreno",
+            "Inserisci Terreno da Anagrafica": "",
+            "Chiudi": "Riepilogo"
+        },
+        "Riepilogo Fabbricati": {
+            "Inserisci Nuovo Fabbricato": "Fabbricato",
+            "Inserisci Fabbricato da Anagrafica": "",
+            "Chiudi": "Riepilogo"
+        },
+        "Terreno": {
+            "Chiudi": "Riepilogo Terreni",
+            "Salva": "Terreno",
+            "No": "Terreno"
+        },
+        "Fabbricato": {
+            "Chiudi": "Riepilogo Fabbricati",
+            "Salva": "Fabbricato"
+        }
+    },
+    "Checkbox": {
+        "Nuovo Adempimento": {},
+        "Riepilogo Terreni": {},
+        "Riepilogo Fabbricati": {},
+        "Fabbricato": {
+            "Interesse Storico / Artistico": ""
+        },
+        "Terreno": {}
+    },
+    "Radio": {
+        "Riepilogo Terreni": {},
+        "Riepilogo Fabbricati": {},
+        "Fabbricato": {
+            "Identificativo": "",
+            "Classato": ""
+        },
+        "Terreno": {},
+        "Nuovo Adempimento": {}
+    }
+}

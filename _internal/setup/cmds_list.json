@@ -1,0 +1,11 @@
+[
+    ["Schiaccia i seguenti pulsanti:\n File -> Nuovo -> Adempimento", "Fatto"],
+    ["Riempi la schermata riguardo \nl'Adempimento e premi Salva", "Fatto"],
+    ["Premi il pulsante Terreni", "Fatto"],
+    ["Premi il pulsante Inserisci Terreno", "Fatto"],
+    ["Ora Inizia il Setup della maschera Terreno\nPremi sulla barra di input o sul menu relativo\n al pulsante indicato", "OK"],
+    ["Hai concluso il Setup della maschera Terreno\nOra premi nuovamente Chiudi\n e torna alla pagina Riepilogo", "Fatto"],
+    ["Premi il pulsante Fabbricati", "Fatto"],
+    ["Premi il pulsante Inserisci nuovo Fabbricato", "Fatto"],
+    ["Ora Inizia il Setup della maschera Fabbricato\nPremi sulla barra di input o sul menu relativo\n al pulsante indicato", "OK"]
+]

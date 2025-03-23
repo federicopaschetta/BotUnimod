@@ -49,7 +49,11 @@ def read_nums(list, starting, add_none=False):
 def get_cat_classe(line):
     match = re.search(r"Categoria\s+([A-Z])\/(\d+)", line[0])
     cat = match.group(1) + match.group(2)
-    classe = re.search(r"Classe\s+(\d+)", line[1]).group(1)
+    classe = re.search(r"Classe\s+(\d+)", line[1])
+    if classe:
+        classe = classe.group(1)
+    else:
+        classe = ''
     consistenza = re.search(r"Consistenza\s+([\d,]+)", line[2]).group(1)
     return cat, classe, consistenza
 

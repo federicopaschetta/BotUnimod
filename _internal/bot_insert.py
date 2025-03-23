@@ -64,9 +64,9 @@ def actions_on_page(info_dict, coords_json, types, act_page):
         
 def load_immobili_dict(pdf_path, sections_path, prov_dict, com_dict):
     tot_dict = {'Fabbricato': {}, 'Terreno': {}}
-    for elem in os.listdir(pdf_path):
+    for elem in pdf_path:
         key = elem.replace('.pdf', '')
-        pdf_dict = read_pdf.get_info_from_pdf(os.path.join(pdf_path, elem), sections_path, prov_dict, com_dict)
+        pdf_dict = read_pdf.get_info_from_pdf(elem, sections_path, prov_dict, com_dict)
         tot_dict[pdf_dict['Tipo']][key] = ({k: v for k, v in pdf_dict.items() if k != 'Tipo'})
     return tot_dict
         
@@ -86,7 +86,7 @@ def insert_immobili(immobili_dict, coords_json, types, type_estate):
     return
 
         
-def main(pdf_path, type): 
+def main(pdf_list, type): 
     if getattr(sys, 'frozen', False):
         base_path = sys._MEIPASS
     else:
@@ -96,6 +96,6 @@ def main(pdf_path, type):
     types = read_data(os.path.join(base_path, 'setup', 'types.json'))
     sections_path = os.path.join(base_path, 'data', 'sections.txt')
     prov_dict, com_dict = read_pdf.load_prov_com(os.path.join(base_path, 'data'))
-    immobili_dict = load_immobili_dict(pdf_path, sections_path, prov_dict, com_dict)
+    immobili_dict = load_immobili_dict(pdf_list, sections_path, prov_dict, com_dict)
     insert_immobili(immobili_dict, coords_json, types, type)
         
